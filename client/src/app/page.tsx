@@ -1,5 +1,11 @@
+import Navigation from "@/components/Navigation";
 import React from "react";
 
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <>
+      <Navigation />
+      <section className="min-h-screen"></section>
+    </>
+  );
 }
