@@ -8,7 +8,10 @@ export default function Store() {
     return (
       <div className="space-y-4">
         <h1 className="text-2xl">All Products</h1>
-        <ul className="flex flex-wrap gap-2">
+        <ul className="flex overflow-hidden gap-2">
+          <li>
+            <ProductCard />
+          </li>
           <li>
             <ProductCard />
           </li>
@@ -30,9 +33,12 @@ export default function Store() {
 
   const CategoryProduct = () => {
     return (
-      <div className="space-y-4">
+      <div className="space-y-4 overflow-hidden">
         <h1 className="text-2xl">Men's Clothing Products</h1>
-        <ul className="flex flex-wrap gap-2">
+        <ul className="flex gap-2">
+          <li>
+            <ProductCard />
+          </li>
           <li>
             <ProductCard />
           </li>

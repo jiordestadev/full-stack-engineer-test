@@ -6,3 +6,20 @@
 @layer utilities {
 
 }
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+    width: 3px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000000;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #00000063;
+}

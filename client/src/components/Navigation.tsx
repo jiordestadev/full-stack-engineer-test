@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Navigation() {
   return (
-    <nav className="w-full sticky top-0 bg-white">
+    <nav className="w-full sticky top-0 bg-white z-10">
       <div className="w-full flex flex-col md:flex-row p-[2rem]">
         <div className="flex justify-start items-center w-full md:w-1/4  border-b md:border-none border-black">
           <Link href={"/"}>WalletWise.</Link>
@@ -19,7 +19,7 @@ export default function Navigation() {
             <li className="flex border-b border-black">
               <img src="/icons/search.svg" width={25} height={25} alt="" />
               <input
-                type="text"
+                type="search"
                 placeholder="search products here.."
                 className="focus:outline-none px-1"
               />
@@ -31,7 +31,9 @@ export default function Navigation() {
             <li>
               <Link href={"/authentication/signin"}>signin</Link>
             </li>
-            <li>cart</li>
+            <li>
+              <Link href="?modal=true">cart</Link>
+            </li>
           </ul>
         </div>
       </div>
