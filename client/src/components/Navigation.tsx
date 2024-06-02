@@ -10,8 +10,12 @@ export default function Navigation() {
         </div>
         <div className="flex justify-start md:justify-center items-center w-full md:w-1/2 border-b md:border-none border-black py-2 md:py-0 overflow-hidden">
           <ul className="flex flex-col md:flex-row  gap-1 md:gap-8">
-            <li>home</li>
-            <li>store</li>
+            <li>
+              <Link href={"/"}>home</Link>
+            </li>
+            <li>
+              <Link href={"/store"}>store</Link>
+            </li>
             <li className="flex border-b border-black">
               <img src="/icons/search.svg" width={25} height={25} alt="" />
               <input
